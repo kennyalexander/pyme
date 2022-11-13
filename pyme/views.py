@@ -39,7 +39,7 @@ def fundacion(request):
     return HttpResponse(documento)         
 
 def productos(request):
-    doc_externo = open("static/views_html/resultado.html")
+    doc_externo = open("static/views_html/productos.html")
     plt = Template(doc_externo.read())
     doc_externo.close()
     ctx = Context()       
