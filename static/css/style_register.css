@@ -7,7 +7,6 @@
 }
 
 body{
-    background-color: #D7E4A2;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,7 +17,6 @@ main{
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
 }
 
 .contenedor__todo{
