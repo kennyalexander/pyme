@@ -30,14 +30,6 @@ def productos(request):
     documento = plt.render(ctx)
     return HttpResponse(documento)         
 
-def carrito(request):
-    doc_externo = open("static/views_html/carrito.html")
-    plt = Template(doc_externo.read())
-    doc_externo.close()
-    ctx = Context()       
-    documento = plt.render(ctx)
-    return HttpResponse(documento)           
-
 def base(request):
     doc_externo = open("static/views_html/base.html")
     plt = Template(doc_externo.read())
@@ -45,11 +37,3 @@ def base(request):
     ctx = Context()       
     documento = plt.render(ctx)
     return HttpResponse(documento)
-
-def prueba(request):
-    doc_externo = open("static/views_html/prueba.html")
-    plt = Template(doc_externo.read())
-    doc_externo.close()
-    ctx = Context()       
-    documento = plt.render(ctx)
-    return HttpResponse(documento)     
