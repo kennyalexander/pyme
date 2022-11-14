@@ -9,5 +9,3 @@ class Productos(models.Model):
   nombrePyme = models.CharField(max_length=30)
   urlimage = models.CharField(max_length=100)
 
-  def __str__(self):
-    return self.nombre
