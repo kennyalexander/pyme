@@ -1,10 +1,16 @@
 from django.http import HttpResponse
 from django.template import Template, Context 
-from django.shortcuts import render 
+from django.shortcuts import render
+from productos.models import Productos
 
 
 def login(request):
     return render(request,"views_html/register_new.html")
+
+def respuesta(request):
+    productos = Productos.objects.all()
+    data = {'productos': productos}
+    return render(request, "static/views_html/productos.html", data)
 
 def inicio(request):
     doc_externo = open("static/views_html/index.html")
