@@ -8,6 +8,5 @@ class Productos(models.Model):
   fechaIncorporacion = models.DateField()
   nombrePyme = models.CharField(max_length=30)
   urlimage = models.CharField(max_length=100)
+  precio = models.IntegerField()
 
-  def __str__(self):
-    return self.nombre
